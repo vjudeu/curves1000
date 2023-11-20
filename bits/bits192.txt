@@ -1,5 +1,5 @@
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
-| bits | p-value                                               | b-value | n-value                                               | 3,7,b,f
+| bits | p-value                                               | b-value | n-value                                               |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  192 | ffffffff ffffffff ffffffff ffffffff fffffffe ffffee37 |       3 | ffffffff ffffffff fffffffe 26f2fc17 0f69466a 74defd8d |
 |  191 | 7fffffff ffffffff ffffffff ffffffff fffffffe ffff6c8b |       3 | 7fffffff ffffffff ffffffff e2785392 dd351a47 b49c3593 |
@@ -17,27 +17,27 @@
 |  181 |   1fffff ffffffff ffffffff ffffffff fffffffe ffff758b |       7 |   1fffff ffffffff ffffffff ffc6c527 a2df9984 62ff3511 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  180 |    fffff ffffffff ffffffff ffffffff fffffffe ffffcf23 |       3 |   100000 00000000 00000000 06f484f2 c8c89913 fedd8475 |
-|  179 |    7ffff ffffffff ffffffff ffffffff fffffffe fffff6a9 |       7 |    80000 00000000 00000000 02adff0c 87bbde9a 037cd0f3 | (recalculating for p%4==3)
+|  179 |    7ffff ffffffff ffffffff ffffffff fffffffe ffffaf7b |       7 |    7ffff ffffffff ffffffff fb44e17f e8b6410c 246e3531 |
 |  178 |    3ffff ffffffff ffffffff ffffffff fffffffe ffff6317 |       3 |    40000 00000000 00000000 034f1e41 b5bb6f08 38743cdf |
-|  177 |    1ffff ffffffff ffffffff ffffffff fffffffe ffffeb39 |       5 |    1ffff ffffffff ffffffff ffb9cdf2 80850502 b1a3fcef | (recalculating for p%4==3)
+|  177 |    1ffff ffffffff ffffffff ffffffff fffffffe ffffc523 |       3 |    20000 00000000 00000000 027b808d daebe3a6 c419b513 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  176 |     ffff ffffffff ffffffff ffffffff fffffffe ffff8d3b |       3 |    10000 00000000 00000000 0165d757 b2ce6bc7 c9a94fcb |
-|  175 |     7fff ffffffff ffffffff ffffffff fffffffe ffffc979 |       5 |     8000 00000000 00000000 0164cbcd 90eecc61 6534f757 | (recalculating for p%4==3)
-|  174 |     3fff ffffffff ffffffff ffffffff fffffffe fffff155 |       5 |     3fff ffffffff ffffffff ff015f16 4053415f 93ca0bdd | (recalculating for p%4==3)
+|  175 |     7fff ffffffff ffffffff ffffffff fffffffe ffff374b |       7 |     8000 00000000 00000000 000cf045 2eb4f645 0897c979 |
+|  174 |     3fff ffffffff ffffffff ffffffff fffffffe ffffe4b3 |       3 |     4000 00000000 00000000 00e2a101 e1ebf4c4 d8163127 |
 |  173 |     1fff ffffffff ffffffff ffffffff fffffffe fffff2fb |       3 |     1fff ffffffff ffffffff ff4d0ca7 5340f574 4a07f3f7 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
-|  172 |      fff ffffffff ffffffff ffffffff fffffffe ffffebe5 |       7 |     1000 00000000 00000000 005cf751 85ac2485 cdf59a71 | (recalculating for p%4==3)
+|  172 |      fff ffffffff ffffffff ffffffff fffffffe ffff9f9b |       3 |     1000 00000000 00000000 006649a7 930436c0 14791667 |
 |  171 |      7ff ffffffff ffffffff ffffffff fffffffe ffffa69f |       3 |      800 00000000 00000000 0055f987 c4ab2e5f 11d9633f |
-|  170 |      3ff ffffffff ffffffff ffffffff fffffffe ffffc539 |       7 |      400 00000000 00000000 003fff21 d4f1bccf b5d45305 | (recalculating for p%4==3)
+|  170 |      3ff ffffffff ffffffff ffffffff fffffffe ffff659f |       3 |      3ff ffffffff ffffffff ffc3a963 c1df7763 9575ae81 |
 |  169 |      1ff ffffffff ffffffff ffffffff fffffffe ffffe923 |       5 |      1ff ffffffff ffffffff ffd5f032 20b2b891 54839423 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  168 |       ff ffffffff ffffffff ffffffff fffffffe ffffe267 |       5 |       ff ffffffff ffffffff fff0609c ded7c950 9486e763 |
 |  167 |       7f ffffffff ffffffff ffffffff fffffffe ffffbb9f |       5 |       7f ffffffff ffffffff fffc519f e2d2a587 d1b5a223 |
 |  166 |       3f ffffffff ffffffff ffffffff fffffffe ffffec87 |       3 |       3f ffffffff ffffffff fff20b50 55bb6439 8ba48161 |
-|  165 |       1f ffffffff ffffffff ffffffff fffffffe ffffbdc1 |       5 |       20 00000000 00000000 000acff9 f6e447fd c97bf4ff | (recalculating for p%4==3)
+|  165 |       1f ffffffff ffffffff ffffffff fffffffe ffffa693 |       3 |       20 00000000 00000000 0008a5f3 e47f957c 305024f9 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  164 |        f ffffffff ffffffff ffffffff fffffffe ffffe2a3 |       5 |        f ffffffff ffffffff ffff6141 cb09ce9e 27fc368b |
-|  163 |        7 ffffffff ffffffff ffffffff fffffffe fffffab1 |       5 |        7 ffffffff ffffffff fffce98a 2a59dfd0 1b060051 | (recalculating for p%4==3)
-|  162 |        3 ffffffff ffffffff ffffffff fffffffe ffffe375 |       7 |        4 00000000 00000000 000367d8 6025871c 946bf237 | (recalculating for p%4==3)
-|  161 |        1 ffffffff ffffffff ffffffff fffffffe ffffe46d |       5 |        2 00000000 00000000 0000947d 8da64c6f 81ae8bcb | (recalculating for p%4==3)
+|  163 |        7 ffffffff ffffffff ffffffff fffffffe ffff9a57 |       5 |        7 ffffffff ffffffff fffc7e61 ed88c184 48798f7b |
+|  162 |        3 ffffffff ffffffff ffffffff fffffffe ffffd1ab |       3 |        3 ffffffff ffffffff fffd1d51 f4422709 a01350dd |
+|  161 |        1 ffffffff ffffffff ffffffff fffffffe ffffe32f |       3 |        2 00000000 00000000 00005f2d 8a5a450f 9281de61 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
