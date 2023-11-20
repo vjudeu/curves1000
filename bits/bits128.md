@@ -1,0 +1,45 @@
+```
++------+-------------------------------------+---------+---------------------------------------+
+| bits | p-value                             | b-value | n-value                               |
++------+-------------------------------------+---------+---------------------------------------+
+|  128 | ffffffff ffffffff fffffffe fffffbe7 |       3 | 1 00000000 00000000 8fdcac80 8ab5b039 |
+|  127 | 7fffffff ffffffff fffffffe fffff81d |       5 |   80000000 00000000 9bfada85 0418ef8f |
+|  126 | 3fffffff ffffffff fffffffe ffffd823 |       5 |   3fffffff ffffffff ff6551df ef584693 |
+|  125 | 1fffffff ffffffff fffffffe fffffc37 |       3 |   1fffffff ffffffff 55bcc904 021a9139 |
++------+-------------------------------------+---------+---------------------------------------+
+|  124 |  fffffff ffffffff fffffffe ffffd48d |       7 |   10000000 00000000 17793caf 6fe2ed85 |
+|  123 |  7ffffff ffffffff fffffffe ffffe74f |       7 |    7ffffff ffffffff c988d15f 758dbe7b |
+|  122 |  3ffffff ffffffff fffffffe ffffe693 |       3 |    3ffffff ffffffff cd2723f2 1e8cae81 |
+|  121 |  1ffffff ffffffff fffffffe ffffedc7 |       7 |    1ffffff ffffffff f8c1318f f606a089 |
++------+-------------------------------------+---------+---------------------------------------+
+|  120 |   ffffff ffffffff fffffffe fffff2ed |       5 |     ffffff ffffffff e014de50 f7d84bff |
+|  119 |   7fffff ffffffff fffffffe fffff28f |       3 |     7fffff ffffffff fb3131db adc8b629 |
+|  118 |   3fffff ffffffff fffffffe fffffa7f |       3 |     3fffff ffffffff f4149761 5d93ac91 |
+|  117 |   1fffff ffffffff fffffffe ffffef53 |       3 |     200000 00000000 0730769e c34c3393 |
++------+-------------------------------------+---------+---------------------------------------+
+|  116 |    fffff ffffffff fffffffe fffff167 |       5 |     100000 00000000 066b0c79 9cf0477f |
+|  115 |    7ffff ffffffff fffffffe fffff77b |       7 |      80000 00000000 02357788 444c86a7 |
+|  114 |    3ffff ffffffff fffffffe fffff239 |       7 |      3ffff ffffffff fc83860a 987ce5fd |
+|  113 |    1ffff ffffffff fffffffe fffffcbb |       3 |      1ffff ffffffff fe7b89ac c5c1749b |
++------+-------------------------------------+---------+---------------------------------------+
+|  112 |     ffff ffffffff fffffffe ffffeddd |       5 |       ffff ffffffff ff20fcfc 86a3f81b |
+|  111 |     7fff ffffffff fffffffe ffffff43 |       5 |       7fff ffffffff ff0b2923 0ca8142b |
+|  110 |     3fff ffffffff fffffffe fffff61d |       5 |       3fff ffffffff ffabe530 f1ad0b3d |
+|  109 |     1fff ffffffff fffffffe fffffa03 |       3 |       1fff ffffffff ff80b52b 88d0ba5d |
++------+-------------------------------------+---------+---------------------------------------+
+|  108 |      fff ffffffff fffffffe fffffc71 |       7 |        fff ffffffff ff868582 2ad5c7dd |
+|  107 |      7ff ffffffff fffffffe fffff433 |       3 |        800 00000000 005a546a 9233ab11 |
+|  106 |      3ff ffffffff fffffffe fffffe3f |       7 |        400 00000000 002ab79f 08bdf16f |
+|  105 |      1ff ffffffff fffffffe ffffe0b9 |       7 |        200 00000000 0026edc0 34f1c20b |
++------+-------------------------------------+---------+---------------------------------------+
+|  104 |       ff ffffffff fffffffe ffffad6f |       5 |         ff ffffffff ffe15794 a28b92db |
+|  103 |       7f ffffffff fffffffe fffff1f9 |       7 |         7f ffffffff fffb429e 5a447641 |
+|  102 |       3f ffffffff fffffffe ffffc93b |       3 |         3f ffffffff fff9fa80 29815741 |
+|  101 |       1f ffffffff fffffffe fffff403 |       5 |         1f ffffffff fff5c0c0 258167b3 |
++------+-------------------------------------+---------+---------------------------------------+
+|  100 |        f ffffffff fffffffe fffff0b3 |       3 |          f ffffffff fffe73e7 bc390fdd |
+|   99 |        7 ffffffff fffffffe fffff74b |       3 |          7 ffffffff fffec688 b4ab05eb |
+|   98 |        3 ffffffff fffffffe fffff9a7 |       3 |          4 00000000 000014f4 c934e1fb |
+|   97 |        1 ffffffff fffffffe ffffeb7b |       5 |          1 ffffffff fffe68d5 733adc65 |
++------+-------------------------------------+---------+---------------------------------------+
+```
