@@ -2,31 +2,31 @@
 | bits | p-value                                               | b-value | n-value                                               |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  192 | ffffffff ffffffff ffffffff ffffffff fffffffe ffffee37 |       3 | ffffffff ffffffff fffffffe 26f2fc17 0f69466a 74defd8d |
-|  191 | 7fffffff ffffffff ffffffff ffffffff fffffffe ffff6c8b |       3 | 7fffffff ffffffff ffffffff e2785392 dd351a47 b49c3593 |
-|  190 | 3fffffff ffffffff ffffffff ffffffff fffffffe fffed3e3 |       3 | 40000000 00000000 00000000 f5b7a6e5 474833f4 ba9fbce1 |
+|  191 | 7fffffff ffffffff ffffffff ffffffff fffffffe ffff774d |       7 | 7fffffff ffffffff fffffffe ddfd07ea 1a6e97d4 3b966459 |
+|  190 | 3fffffff ffffffff ffffffff ffffffff fffffffe ffffdd15 |       7 | 40000000 00000000 00000000 b70af987 4eb781e1 2b4bda23 |
 |  189 | 1fffffff ffffffff ffffffff ffffffff fffffffe fffff08b |       7 | 1fffffff ffffffff ffffffff 557e7959 c8043686 9caa746b |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
-|  188 |  fffffff ffffffff ffffffff ffffffff fffffffe ffff6a4f |       3 |  fffffff ffffffff ffffffff 80060e94 df763239 f35bf597 |
+|  188 |  fffffff ffffffff ffffffff ffffffff fffffffe ffff9f1d |       5 | 10000000 00000000 00000000 42b72388 4bfa6490 da0e2a87 |
 |  187 |  7ffffff ffffffff ffffffff ffffffff fffffffe ffffbe57 |       3 |  7ffffff ffffffff ffffffff fa6a7eac 2b38a87e 917d538b |
 |  186 |  3ffffff ffffffff ffffffff ffffffff fffffffe ffff61eb |       3 |  3ffffff ffffffff ffffffff c0508b7d b73050c0 c62c43a5 |
 |  185 |  1ffffff ffffffff ffffffff ffffffff fffffffe ffffd21f |       3 |  1ffffff ffffffff ffffffff d2beee92 29e9d6b8 1eb7b345 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
-|  184 |   ffffff ffffffff ffffffff ffffffff fffffffe ffffa3af |       3 |  1000000 00000000 00000000 1fc1e5d2 e5032eb8 f6ecd3db |
+|  184 |   ffffff ffffffff ffffffff ffffffff fffffffe ffffa505 |       7 |  1000000 00000000 00000000 12fb98f7 92d49c91 6b22f293 |
 |  183 |   7fffff ffffffff ffffffff ffffffff fffffffe ffffc62b |       3 |   800000 00000000 00000000 16509571 f6d67e25 f7986d55 |
 |  182 |   3fffff ffffffff ffffffff ffffffff fffffffe fffffe1b |       3 |   3fffff ffffffff ffffffff f492bf70 8981c971 8111dc09 |
 |  181 |   1fffff ffffffff ffffffff ffffffff fffffffe ffff758b |       7 |   1fffff ffffffff ffffffff ffc6c527 a2df9984 62ff3511 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  180 |    fffff ffffffff ffffffff ffffffff fffffffe ffffcf23 |       3 |   100000 00000000 00000000 06f484f2 c8c89913 fedd8475 |
-|  179 |    7ffff ffffffff ffffffff ffffffff fffffffe ffffaf7b |       7 |    7ffff ffffffff ffffffff fb44e17f e8b6410c 246e3531 |
+|  179 |    7ffff ffffffff ffffffff ffffffff fffffffe ffffc51d |       7 |    80000 00000000 00000000 01dfdf72 df233920 fca32fbd |
 |  178 |    3ffff ffffffff ffffffff ffffffff fffffffe ffff6317 |       3 |    40000 00000000 00000000 034f1e41 b5bb6f08 38743cdf |
 |  177 |    1ffff ffffffff ffffffff ffffffff fffffffe ffffc523 |       3 |    20000 00000000 00000000 027b808d daebe3a6 c419b513 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  176 |     ffff ffffffff ffffffff ffffffff fffffffe ffff8d3b |       3 |    10000 00000000 00000000 0165d757 b2ce6bc7 c9a94fcb |
-|  175 |     7fff ffffffff ffffffff ffffffff fffffffe ffff374b |       7 |     8000 00000000 00000000 000cf045 2eb4f645 0897c979 |
-|  174 |     3fff ffffffff ffffffff ffffffff fffffffe ffffe4b3 |       3 |     4000 00000000 00000000 00e2a101 e1ebf4c4 d8163127 |
+|  175 |     7fff ffffffff ffffffff ffffffff fffffffe ffff717d |       7 |     8000 00000000 00000000 00d7fdee ebab303c 0b722263 |
+|  174 |     3fff ffffffff ffffffff ffffffff fffffffe fffff155 |       5 |     3fff ffffffff ffffffff ff015f16 4053415f 93ca0bdd |
 |  173 |     1fff ffffffff ffffffff ffffffff fffffffe fffff2fb |       3 |     1fff ffffffff ffffffff ff4d0ca7 5340f574 4a07f3f7 |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
-|  172 |      fff ffffffff ffffffff ffffffff fffffffe ffff9f9b |       3 |     1000 00000000 00000000 006649a7 930436c0 14791667 |
+|  172 |      fff ffffffff ffffffff ffffffff fffffffe ffffebe5 |       7 |     1000 00000000 00000000 005cf751 85ac2485 cdf59a71 |
 |  171 |      7ff ffffffff ffffffff ffffffff fffffffe ffffa69f |       3 |      800 00000000 00000000 0055f987 c4ab2e5f 11d9633f |
 |  170 |      3ff ffffffff ffffffff ffffffff fffffffe ffff659f |       3 |      3ff ffffffff ffffffff ffc3a963 c1df7763 9575ae81 |
 |  169 |      1ff ffffffff ffffffff ffffffff fffffffe ffffe923 |       5 |      1ff ffffffff ffffffff ffd5f032 20b2b891 54839423 |
@@ -38,6 +38,6 @@
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
 |  164 |        f ffffffff ffffffff ffffffff fffffffe ffffe2a3 |       5 |        f ffffffff ffffffff ffff6141 cb09ce9e 27fc368b |
 |  163 |        7 ffffffff ffffffff ffffffff fffffffe ffff9a57 |       5 |        7 ffffffff ffffffff fffc7e61 ed88c184 48798f7b |
-|  162 |        3 ffffffff ffffffff ffffffff fffffffe ffffd1ab |       3 |        3 ffffffff ffffffff fffd1d51 f4422709 a01350dd |
-|  161 |        1 ffffffff ffffffff ffffffff fffffffe ffffe32f |       3 |        2 00000000 00000000 00005f2d 8a5a450f 9281de61 |
+|  162 |        3 ffffffff ffffffff ffffffff fffffffe ffffe375 |       7 |        4 00000000 00000000 000367d8 6025871c 946bf237 |
+|  161 |        1 ffffffff ffffffff ffffffff fffffffe ffffe46d |       5 |        2 00000000 00000000 0000947d 8da64c6f 81ae8bcb |
 +------+-------------------------------------------------------+---------+-------------------------------------------------------+
