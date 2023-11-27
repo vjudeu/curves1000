@@ -6,10 +6,10 @@ Non-standard elliptic curve, based on secp256k1, with non-standard dummy generat
 | n-value |      1ff ffffffff ffffffff ffffffff ffd5dab0 46491eaf dc62859e 653654b1 |
 +---------+-------------------------------------------------------------------------+
 | x-value |       9f ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff afffb516 |
-| y-value |      1f7 ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff 03ff140a |
+| y-value |        7 ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fbfffc41 |
 +---------+-------------------------------------------------------------------------+
 | (G/2).x |                                                                       1 |
-| (G/2).y |      1ff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe ffff1049 |
+| (G/2).y |                                                                       2 |
 +---------+-------------------------------------------------------------------------+
 ```
 Sage code for testing half of the generator:
@@ -19,7 +19,7 @@ K=GF(p)
 a=K(0)
 b=K(3)
 E=EllipticCurve(K,(a,b))
-G=E(0x9fffffffffffffffffffffffffffffffffffffffffffffffffafffb516,0x1f7ffffffffffffffffffffffffffffffffffffffffffffffff03ff140a)
+G=E(0x9fffffffffffffffffffffffffffffffffffffffffffffffffafffb516,0x7fffffffffffffffffffffffffffffffffffffffffffffffffbfffc41)
 h=1
 E.set_order(0x1ffffffffffffffffffffffffffffd5dab046491eafdc62859e653654b1*h)
 d=0xffffffffffffffffffffffffffffeaed5823248f57ee3142cf329b2a59
