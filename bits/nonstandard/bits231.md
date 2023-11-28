@@ -7,7 +7,7 @@ Non-standard elliptic curve, based on secp256k1, with non-standard dummy generat
 +---------+-------------------------------------------------------------------------+
 | x-value |       40 ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff 7dfff5cb |
 | y-value |       18 e91f0011 39b8dbfc d3ea776c 46371e18 5ec36993 3ffb56cb 89697dfb |
- +---------+-------------------------------------------------------------------------+
++---------+-------------------------------------------------------------------------+
 | (G/2).x |                                                                       3 |
 | (G/2).y |       2b 9dae5738 c85a5756 37c2647d f5ec2926 990c10ff 9a7935a1 445b01d6 |
 +---------+-------------------------------------------------------------------------+
@@ -39,6 +39,10 @@ while not is_on_curve:
     y_square=(x_cube+b_value)%p
     y=y_square.powermod(modulo_root,p)
     is_on_curve=(y.powermod(2,p)==y_square)
+    if is_on_curve:
+        y_negative=(p-y)
+        if y_negative<y:
+            y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
         x+=1
