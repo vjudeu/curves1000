@@ -38,6 +38,10 @@ while not is_on_curve:
     y_square=(x_cube+b_value)%p
     y=y_square.powermod(modulo_root,p)
     is_on_curve=(y.powermod(2,p)==y_square)
+    if is_on_curve:
+        y_negative=(p-y)
+        if y_negative<y:
+            y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
         x+=1
