@@ -47,6 +47,10 @@ while not is_on_curve:
         second_y=(first_y*second_multiplier)%p
         is_on_curve=(second_y.powermod(2,p)==y_square)
         y=second_y
+    if is_on_curve:
+        y_negative=(p-y)
+        if y_negative<y:
+            y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
         x+=1
