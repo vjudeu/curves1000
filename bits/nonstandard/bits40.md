@@ -22,7 +22,7 @@ E=EllipticCurve(K,(a,b))
 G=E(0xcf2fffffc0,0x23dbfffff5)
 h=1
 E.set_order(0xff001fecc7*h)
-d=0xff001fecc8/2
+d=0x7f800ff664
 print(hex(d))
 P=d*G
 print(hex(P[0]),hex(P[1]))
