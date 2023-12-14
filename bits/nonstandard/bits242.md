@@ -5,11 +5,11 @@ Non-standard elliptic curve, based on secp256k1, with non-standard dummy generat
 | b-value |                                                                       5 |
 | n-value |    40000 00000000 00000000 00000000 00287729 fe3ece24 6e3eeb44 b91f411f |
 +---------+-------------------------------------------------------------------------+
-| x-value |    347ff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff 2dff8d34 |
-| y-value |     ec60 faab7772 b9fc901e cb14fd55 e17683dc 647517d6 526d0bfb a9b8757a |
+| x-value |    23fff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff 6fffb14b |
+| y-value |    24fff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff 6bffaf14 |
 +---------+-------------------------------------------------------------------------+
-| (G/2).x |                                                                       3 |
-| (G/2).y |     ac86 b9ca7ac1 3a8e12db 67093fe1 40d66a5c 2b5692e4 5ad3cce6 bf3b816f |
+| (G/2).x |    3ffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe ffff740e |
+| (G/2).y |                                                                       2 |
 +---------+-------------------------------------------------------------------------+
 ```
 Sage code for testing half of the generator:
@@ -19,7 +19,7 @@ K=GF(p)
 a=K(0)
 b=K(5)
 E=EllipticCurve(K,(a,b))
-G=E(0x347ffffffffffffffffffffffffffffffffffffffffffffffffff2dff8d34,0xec60faab7772b9fc901ecb14fd55e17683dc647517d6526d0bfba9b8757a)
+G=E(0x23fffffffffffffffffffffffffffffffffffffffffffffffffff6fffb14b,0x24fffffffffffffffffffffffffffffffffffffffffffffffffff6bffaf14)
 h=1
 E.set_order(0x4000000000000000000000000000000287729fe3ece246e3eeb44b91f411f*h)
 d=0x2000000000000000000000000000000143b94ff1f6712371f75a25c8fa090
@@ -31,7 +31,7 @@ Sage code for finding the generator:
 ```
 p=0x3fffffffffffffffffffffffffffffffffffffffffffffffffffeffff740f
 modulo_root=(p+1)/4
-x=0
+x=p
 b_value=5
 is_on_curve=False
 while not is_on_curve:
@@ -45,5 +45,5 @@ while not is_on_curve:
             y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
-        x+=1
+        x-=1
 ```
