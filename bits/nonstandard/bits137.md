@@ -5,11 +5,11 @@ Non-standard elliptic curve, based on secp256k1, with non-standard dummy generat
 | b-value |                                            5 |
 | n-value |      200 00000000 00000021 ac389041 dc338a65 |
 +---------+----------------------------------------------+
-| x-value |       e3 ffffffff ffffffff ffffffff 8dfff943 |
-| y-value |       bc 4bdd1ad2 6f1950cf 8b8998ff 6e00e25d |
+| x-value |      11f ffffffff ffffffff ffffffff 6ffff780 |
+| y-value |      1a7 ffffffff ffffffff ffffffff 2bfff374 |
 +---------+----------------------------------------------+
-| (G/2).x |                                            3 |
-| (G/2).y |       ef dd6791d2 a45d15a3 ac0e84b6 a238060c |
+| (G/2).x |      1ff ffffffff ffffffff fffffffe fffff0de |
+| (G/2).y |                                            2 |
 +---------+----------------------------------------------+
 ```
 Sage code for testing half of the generator:
@@ -19,7 +19,7 @@ K=GF(p)
 a=K(0)
 b=K(5)
 E=EllipticCurve(K,(a,b))
-G=E(0xe3ffffffffffffffffffffffff8dfff943,0xbc4bdd1ad26f1950cf8b8998ff6e00e25d)
+G=E(0x11fffffffffffffffffffffffff6ffff780,0x1a7ffffffffffffffffffffffff2bfff374)
 h=1
 E.set_order(0x2000000000000000021ac389041dc338a65*h)
 d=0x1000000000000000010d61c4820ee19c533
@@ -31,7 +31,7 @@ Sage code for finding the generator:
 ```
 p=0x1fffffffffffffffffffffffffefffff0df
 modulo_root=(p+1)/4
-x=0
+x=p
 b_value=5
 is_on_curve=False
 while not is_on_curve:
@@ -45,5 +45,5 @@ while not is_on_curve:
             y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
-        x+=1
+        x-=1
 ```
