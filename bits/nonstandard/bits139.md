@@ -5,11 +5,11 @@ Non-standard elliptic curve, based on secp256k1, with non-standard dummy generat
 | b-value |                                            5 |
 | n-value |      7ff ffffffff ffffffae 9991e6a8 703007e5 |
 +---------+----------------------------------------------+
-| x-value |      589 d89d89d8 9d89d89d 89d89d89 276239e9 |
-| y-value |      3fd 472240b3 f6bd571d a0063580 1192f31e |
+| x-value |      17f ffffffff ffffffff ffffffff cfffefb2 |
+| y-value |       df ffffffff ffffffff ffffffff e3fff677 |
 +---------+----------------------------------------------+
-| (G/2).x |                                            2 |
-| (G/2).y |      160 3d8fc484 05d1b78c 8384ee7a d081dbe0 |
+| (G/2).x |      7ff ffffffff ffffffff fffffffe ffffa8fc |
+| (G/2).y |                                            2 |
 +---------+----------------------------------------------+
 ```
 Sage code for testing half of the generator:
@@ -19,7 +19,7 @@ K=GF(p)
 a=K(0)
 b=K(5)
 E=EllipticCurve(K,(a,b))
-G=E(0x589d89d89d89d89d89d89d89d89276239e9,0x3fd472240b3f6bd571da00635801192f31e)
+G=E(0x17fffffffffffffffffffffffffcfffefb2,0xdfffffffffffffffffffffffffe3fff677)
 h=1
 E.set_order(0x7ffffffffffffffffae9991e6a8703007e5*h)
 d=0x3ffffffffffffffffd74cc8f354381803f3
@@ -34,7 +34,7 @@ first_modulo_root=(p+3)/8
 second_modulo_root=(p-1)/4
 two=2
 second_multiplier=two.powermod(second_modulo_root,p)
-x=0
+x=p
 b_value=5
 is_on_curve=False
 while not is_on_curve:
@@ -53,5 +53,5 @@ while not is_on_curve:
             y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
-        x+=1
+        x-=1
 ```
