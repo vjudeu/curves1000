@@ -5,11 +5,11 @@ Non-standard elliptic curve, based on secp256k1, with non-standard dummy generat
 | b-value |                          5 |
 | n-value |       ff ffffffe8 5c13ec31 |
 +---------+----------------------------+
-| x-value |       fa 3548fa34 4ec4e100 |
-| y-value |       68 21f318bb 96e7c134 |
+| x-value |       2f ffffffff cffffdd7 |
+| y-value |       db ffffffff 23fff609 |
 +---------+----------------------------+
-| (G/2).x |                          6 |
-| (G/2).y |       34 e6e7a963 f06d5061 |
+| (G/2).x |       ff fffffffe fffff46c |
+| (G/2).y |                          2 |
 +---------+----------------------------+
 ```
 Sage code for testing half of the generator:
@@ -19,7 +19,7 @@ K=GF(p)
 a=K(0)
 b=K(5)
 E=EllipticCurve(K,(a,b))
-G=E(0xfa3548fa344ec4e100,0x6821f318bb96e7c134)
+G=E(0x2fffffffffcffffdd7,0xdbffffffff23fff609)
 h=1
 E.set_order(0xffffffffe85c13ec31*h)
 d=0x7ffffffff42e09f619
@@ -34,7 +34,7 @@ first_modulo_root=(p+3)/8
 second_modulo_root=(p-1)/4
 two=2
 second_multiplier=two.powermod(second_modulo_root,p)
-x=0
+x=p
 b_value=5
 is_on_curve=False
 while not is_on_curve:
@@ -53,5 +53,5 @@ while not is_on_curve:
             y=y_negative
     print(is_on_curve,hex(x),hex(y))
     if not is_on_curve:
-        x+=1
+        x-=1
 ```
